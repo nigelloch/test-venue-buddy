@@ -20,20 +20,26 @@ var searchcurrentLocation = function(e) {
         https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY
 
         */
-
         navigator.geolocation.getCurrentPosition(function(pos){
             console.log(pos.coords)
-        var lat=pos.coords.latitude
-        var long=pos.coords.longitude
+         var lat=pos.coords.latitude
+         var long=pos.coords.longitude
+         console.log(lat)
+         getCityName(lat,long)
         })
-        fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=${apiKey}`)            // ` for interprelation
+
+}
+function getCityName(lat,long){
+
+    fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&key=${apiKey}`)            // ` for interprelation
             .then(response => response.json())
             .then(data => {
-                console.log(data)
-                // zipcode=data.results[0].address_components.7.short_name
+                console.log(data.results[0].address_components[7].short_name)
+                getCityVenue(data.results[0].address_components[7].short_name)
             })
-
-    
 }
-
+function getCityVenue(zipCode){
+// USe the zipcode to get venues with seatgeek
+// go to seatgeeks documentation page, ctrl f for zip or postal, then should show how to format a request using the zipcode. name, address and image 
+}
 zipBtn.addEventListener("click", searchcurrentLocation)
