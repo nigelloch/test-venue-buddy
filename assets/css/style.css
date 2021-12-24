@@ -30,7 +30,7 @@ header h1 {
   width: 100%;
   height: 250px;
   position: relative;
-  background-image: url("./festival.jpg");
+  background-image: url("../festival.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
