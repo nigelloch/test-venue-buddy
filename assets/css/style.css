@@ -62,7 +62,7 @@ header h1 {
 .content-area{
   width: 100%;
   background:rgb(255, 255, 255);
-  background-image: url("../images/festival.jpg");
+  background-image: url("../festival.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -130,7 +130,7 @@ button{
   display: flex;
   align-items: center;
   gap: 4px;
-  background-image: url("../images/festival.jpg");
+  background-image: url("../festival.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
