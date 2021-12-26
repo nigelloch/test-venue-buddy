@@ -1,9 +1,15 @@
 
+
 var googleApiKey = "AIzaSyDW9m-QeI0q_p6yQZ_vpMvfuuwxTOPBoOc"
 
 var seatGeekApi = 'MjQ5NjgyNzZ8MTYzOTcwODEzMS4yNTQzNDE0'
 
 var locationBtn = document.querySelector("#search-btn")
+
+var paginationEl = document.getElementById("#pagination")
+
+// var getData = document.getElementById("#username")
+//     if (values)
 
     // get user lat/long
 var searchcurrentLocation = function(e) {
@@ -94,6 +100,7 @@ function getLocation(lat,long){
                          anchorLink.textContent = "Buy Tickets!"
                          purchaseColumn.appendChild(anchorLink)
 
+
                     // creates rows for returned seat geek data
                     tableRow.appendChild(timeColumn);
                     tableRow.appendChild(venueColumn);
@@ -101,14 +108,14 @@ function getLocation(lat,long){
                     tableRow.appendChild(locationColumn);
                     tableRow.appendChild(purchaseColumn);
                     document.getElementById("venue-table-body").appendChild(tableRow)
-                }
 
+                    
+                }
             })
 })
 }
 
 locationBtn.addEventListener("click", searchcurrentLocation,getLocation)
-
 
 
 
