@@ -25,8 +25,8 @@
 
       <form id="user-form" class="card-body">
         <div class="form-group">
-          <label for="zipcode" class="form-label">Browse Events Near:</label>
-<!--           <input
+          <label for="zipcode" class="form">Browse Events Near Me!</label>
+          <!-- <input
             name="username"
             placeholder="Current Location"
             id="username"
@@ -54,9 +54,10 @@
         </select>
       </div>
 
-      <button type="submit" class="search-btn">
+      <button id="search-btn" type="submit" class="search-btn">
         Search venues near my location
       </button>
+      
     </div>
     
     <div class="content-area">
@@ -65,149 +66,17 @@
           <tr>
             <th>Time</th>
             <th>Venue</th>
-            <th>Price</th>
+            <th>Event</th>
             <th>Location</th>
+            <th>Purchase Tickets</th>
           </tr>
         </thead>
         <tbody id="venue-table-body">
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
-          <tr>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asd</td>
-            <td>asdfsadf</td>
-          </tr>
         </tbody>
       </table>
     </div>
     <!--start of pagination-->
-    <div class="pagination-buttons">
+    <div id= "pagination" class="pagination-buttons">
       <button type="button" class="page-btn prev-page">start</button>
       <button type="button" class="page-btn start-page">prev</button>
       <button type="button" class="page-btn active">1</button>
@@ -227,6 +96,6 @@
     <footer>
       <h3>&copy; 2021 Venue Buddy, Inc.</h3>
     </footer>
-    <script src="./assets/js/homepage.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
